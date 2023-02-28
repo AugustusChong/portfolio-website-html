@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Yellowtail:300,400,500,600,700,800,900&display=swap");
+
+$logo-font: Yellowtail, cursive;
+$font-stack: Poppins, sans-serif;
+$background-gradient: #fff2bd, #f4d797, #ebb58a, #da7f7d, #85728e, #776e99;
+
+* {
+  font-family: $font-stack;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient($background-gradient);
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-width: fit-content;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-20px);
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        background-color: #3792cb;
+        color: #fff;
+        border-radius: 30px;
+        padding: 6px 14px;
+        font-size: 30px;
+      }
+
+      a:hover,
+      a:active {
+        background: #fff;
+        color: #000000;
+      }
+    }
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: fit-content;
+  width: 100%;
+  z-index: 10;
+
+  .logo {
+    font-family: $logo-font;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3792cb;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.1px #fff;
+    text-shadow: 0px 4px 4px #282828;
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+    li {
+      list-style: none;
+      margin-left: 12px;
+
+      a {
+        text-decoration: none;
+        background-color: #3792cb;
+        color: #fff;
+        border-radius: 20px;
+        padding: 6px 12px;
+      }
+
+      a:hover,
+      a:active {
+        background: #fff;
+        color: #000000;
+      }
+    }
+  }
+}
+
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  img {
+    pointer-events: none;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+section::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, #ca822d, transparent);
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 9;
+}
+
+#birds {
+  height: auto;
+  width: 50vh;
+  z-index: 2;
+  transform: translate(40vw, 50%);
+}
+
+#clouds {
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+#mountainsBehind {
+  z-index: 1;
+}
+
+#sun {
+  mix-blend-mode: color-burn;
+}
+
+#treesFront {
+  z-index: 3;
+}
+
+#skills {
+  position: relative;
+  background: #ca822d;
+  padding: 100px;
+
+  h2 {
+    color: #fff;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.2em;
+  }
+}
+
+#text {
+  position: absolute;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 7.5vw;
+  right: -1000px;
+  transform: translateY(-100px);
+  z-index: 1;
+}
+
+#toTopButton {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background-color: #3792cb;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+#toTopButton:hover {
+  background-color: #fff;
+
+  a {
+    color: #000000;
+  }
+}
