@@ -113,8 +113,8 @@ section img {
   object-fit: cover;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 section::before {
@@ -128,10 +128,10 @@ section::before {
 }
 
 #birds {
-  height: auto;
-  width: 50vh;
+  height: 25%;
+  width: auto;
+  transform: translate(45vw, 25vh);
   z-index: 2;
-  transform: translate(40vw, 50%);
 }
 
 #clouds {
@@ -152,20 +152,46 @@ section::before {
   z-index: 3;
 }
 
+#stack {
+  z-index: 1;
+}
+
+#stackTop {
+  position: absolute;
+  transform: translateY(-116px);
+}
+
+#stackMiddle {
+  position: absolute;
+}
+
+#stackBottom {
+  position: absolute;
+  transform: translateY(116px);
+}
+
 #skills {
   position: relative;
   background: #ca822d;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 #skills h2 {
+  text-align: center;
+  align-items: center;
   color: #fff;
   font-size: 3.5em;
   margin-bottom: 10px;
-  text-align: center;
 }
-#skills p {
-  color: #fff;
-  font-size: 1.2em;
+#skills div .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#skills div .col-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #text {
@@ -202,6 +228,12 @@ section::before {
 }
 #toTopButton:hover a {
   color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

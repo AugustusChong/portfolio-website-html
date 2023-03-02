@@ -43,23 +43,32 @@
       <img
         src="./src/assets/images/flying_birds.gif"
         id="birds"
+        alt="Flying Birds"
         title="@Halestorm"
       />
       <img
         src="./src/assets/images/sun.png"
         id="sun"
+        alt="Sun"
         title="Image by rawpixel.com on Freepik"
       />
-      <img src="./src/assets/images/clouds.png" id="clouds" />
+      <img
+        src="./src/assets/images/clouds.png"
+        id="clouds"
+        alt="Clouds"
+        title="Image by Freepik"
+      />
       <img
         src="./src/assets/images/mountains_behind.png"
         id="mountainsBehind"
+        alt="Mountains Background"
         title="Image by upklyak on Freepik"
       />
       <h2 id="text">Hello, World!</h2>
       <img
         src="./src/assets/images/trees_front.png"
         id="treesFront"
+        alt="Trees Foreground"
         title="Image by upklyak on Freepik"
       />
     </section>
@@ -70,45 +79,62 @@
 
     <div id="skills">
       <h2>Skills</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae
-        repellendus maiores esse deserunt. Ipsum rem sint itaque dignissimos
-        cupiditate sapiente quod, nihil voluptate, ut debitis nemo! Ex, officia
-        incidunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Asperiores dolor autem necessitatibus rem in. Vitae amet quo placeat
-        repudiandae earum, porro hic impedit reprehenderit harum,
-        exercitationem, animi aut numquam dolores. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Aliquid dolorum voluptatibus sit magnam
-        voluptatem mollitia dolores molestias libero id inventore assumenda
-        similique, fugit nesciunt sunt quia totam cum. Reprehenderit,
-        praesentium?
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
-        laboriosam quibusdam porro. Ullam molestias nisi magni rem, asperiores
-        debitis quaerat laborum quisquam adipisci aliquam, dolorem atque
-        suscipit blanditiis, temporibus sunt! Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Maxime cupiditate dicta ducimus, incidunt
-        ullam itaque minus aperiam reiciendis voluptate molestias aliquid autem
-        rem asperiores fugiat quisquam perferendis, veniam, accusantium
-        provident? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Libero corrupti alias a officiis modi officia vel recusandae
-        exercitationem totam mollitia voluptatum aliquid minima eum, facilis
-        dolore assumenda aperiam, maxime similique!
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-        aperiam nam architecto. Architecto, dolor quos. Velit exercitationem
-        possimus impedit enim est asperiores aspernatur corporis eius sunt,
-        molestiae placeat, at ipsum. Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Dignissimos harum, qui error magni assumenda quae
-        nulla? Adipisci eligendi magni officiis ipsum expedita laudantium atque
-        hic, enim, sapiente eveniet mollitia saepe? Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Deleniti aliquam porro exercitationem
-        excepturi inventore magni commodi adipisci rerum quisquam consequatur
-        recusandae eveniet magnam corporis ea, quibusdam aliquid earum eos
-        eaque!
-      </p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="./src/assets/images/stack.png"
+              id="stack"
+              alt="Stack Image"
+              usemap="#stackMap"
+            />
+            <map name="stackMap">
+              <area
+                shape="poly"
+                coords="300,25, 560,162, 562,206, 300,345, 35,212, 35,165"
+                id="topStackArea"
+                alt="Top Stack"
+                onclick=""
+              />
+              <area
+                shape="poly"
+                coords="300,346, 494,242, 563,275, 563,324, 300,459, 35,324, 35,272, 115,245"
+                id="middleStackArea"
+                alt="Middle Stack"
+                onclick=""
+              />
+              <area
+                shape="poly"
+                coords="300,459, 494,358, 562,394, 562,438, 300,576, 38,438, 38,394, 106,358"
+                id="bottomStackArea"
+                alt="Bottom Stack"
+                onclick=""
+              />
+            </map>
+            <img
+              src="./src/assets/images/stack_bottom.png"
+              id="stackBottom"
+              alt="Bottom Stack"
+              class="d-none"
+            />
+            <img
+              src="./src/assets/images/stack_middle.png"
+              id="stackMiddle"
+              alt="Middle Stack"
+              class="d-none"
+            />
+            <img
+              src="./src/assets/images/stack_top.png"
+              id="stackTop"
+              alt="Top Stack"
+              class="d-none"
+            />
+          </div>
+          <div class="col-6">
+            <p>Hover over each stack to see teh skillz</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="projects">
@@ -163,6 +189,5 @@
       crossorigin
     ></script>
     <script src="script.js"></script>
-    <!-- <script type="text/babel" src="./src/components/skills/skills.js"></script> -->
   </body>
 </html>
