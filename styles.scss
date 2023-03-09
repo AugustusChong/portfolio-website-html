@@ -173,9 +173,18 @@ section::before {
 
 #stackTop {
   position: absolute;
-  transform: translateY(-180px);
+  transform: translateY(-40%);
   z-index: 1;
   scale: 0.5;
+  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  -webkit-clip-path: polygon(
+    50% 100%,
+    100% 60%,
+    100% 40%,
+    50% 0,
+    0% 40%,
+    0% 60%
+  );
 }
 #stackTop:hover {
   scale: 0.6;
@@ -185,6 +194,15 @@ section::before {
   position: absolute;
   z-index: 1;
   scale: 0.5;
+  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  -webkit-clip-path: polygon(
+    50% 100%,
+    100% 60%,
+    100% 40%,
+    50% 0,
+    0% 40%,
+    0% 60%
+  );
 }
 #stackMiddle:hover {
   scale: 0.6;
@@ -192,9 +210,18 @@ section::before {
 
 #stackBottom {
   position: absolute;
-  transform: translateY(180px);
+  transform: translateY(40%);
   z-index: 1;
   scale: 0.5;
+  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  -webkit-clip-path: polygon(
+    50% 100%,
+    100% 60%,
+    100% 40%,
+    50% 0,
+    0% 40%,
+    0% 60%
+  );
 }
 #stackBottom:hover {
   scale: 0.6;
