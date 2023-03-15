@@ -36,3 +36,37 @@ function toTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+window.onload = function () {
+  $("#stackTop").on("mouseenter", showFrontEndSkills);
+  $("#stackTop").on("mouseout", showSkillsHeader);
+  $("#stackMiddle").on("mouseenter", showMiddleTierSkills);
+  $("#stackMiddle").on("mouseout", showSkillsHeader);
+  $("#stackBottom").on("mouseenter", showBackEndSkills);
+  $("#stackBottom").on("mouseout", showSkillsHeader);
+
+  function showSkillsHeader() {
+    $("#skillsHeader").show();
+    $("#frontEndSkills").hide();
+    $("#middleTierSkills").hide();
+    $("#backEndSkills").hide();
+  }
+
+  function showFrontEndSkills(e) {
+    e.stopPropagation();
+    $("#skillsHeader").hide();
+    $("#frontEndSkills").show();
+  }
+
+  function showMiddleTierSkills(e) {
+    e.stopPropagation();
+    $("#skillsHeader").hide();
+    $("#middleTierSkills").show();
+  }
+
+  function showBackEndSkills(e) {
+    e.stopPropagation();
+    $("#skillsHeader").hide();
+    $("#backEndSkills").show();
+  }
+};

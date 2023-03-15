@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Yellowtail:300,400,500,600,700,800,900&display=swap");
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+}
 * {
   font-family: Poppins, sans-serif;
   box-sizing: border-box;
@@ -11,43 +16,7 @@
 body {
   background: linear-gradient(#fff2bd, #f4d797, #ebb58a, #da7f7d, #85728e, #776e99);
   overflow-x: hidden;
-  min-height: 100vh;
-  min-width: fit-content;
   width: 100%;
-}
-
-footer {
-  position: fixed;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
-  z-index: 0;
-}
-footer ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-20px);
-  padding-left: 0;
-}
-footer ul li {
-  list-style: none;
-  padding-left: 20px;
-}
-footer ul li a {
-  text-decoration: none;
-  background-color: #3792cb;
-  color: #fff;
-  border-radius: 30px;
-  padding: 6px 14px;
-  font-size: 30px;
-}
-footer ul li a:hover,
-footer ul li a:active {
-  background: #fff;
-  color: #000000;
 }
 
 header {
@@ -57,7 +26,6 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  min-width: fit-content;
   width: 100%;
   z-index: 10;
 }
@@ -106,6 +74,7 @@ section {
   overflow: hidden;
   position: relative;
   width: 100vw;
+  min-width: fit-content;
   height: 100vh;
 }
 section img {
@@ -153,8 +122,67 @@ section::before {
   z-index: 3;
 }
 
-#stack {
-  z-index: 0;
+#text {
+  position: absolute;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 7.5vw;
+  right: -1000px;
+  transform: translateY(-100px);
+  z-index: 1;
+}
+
+#toTopButton {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background-color: #3792cb;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#toTopButton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#toTopButton:hover {
+  background-color: #fff;
+}
+#toTopButton:hover a {
+  color: #000000;
+}
+
+#skills {
+  position: relative;
+  background: #ca822d;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+#skills h2 {
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+#skills div .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#skills div .col-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#skills div .stackContainer {
+  height: 500px;
 }
 
 #stackTop {
@@ -195,73 +223,58 @@ section::before {
   scale: 0.6;
 }
 
-#skills {
-  position: relative;
-  background: #ca822d;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-#skills h2 {
-  text-align: center;
-  align-items: center;
+#skillsHeader {
   color: #fff;
-  font-size: 3.5em;
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-align: justify;
+  text-justify: auto;
 }
-#skills div .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+
+#frontEndSkills {
+  display: none;
 }
-#skills div .col-6 {
+
+#middleTierSkills {
+  display: none;
+}
+
+#backEndSkills {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  bottom: 0;
+  width: 200px;
+  color: #fff;
+  z-index: 0;
+  transform: translate(-50%, 0);
+}
+footer ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-20px);
+  padding-left: 0;
 }
-#skills div .stackContainer {
-  height: 500px;
+footer ul li {
+  list-style: none;
+  padding-left: 20px;
 }
-
-#text {
-  position: absolute;
-  white-space: nowrap;
-  color: #fff;
-  font-size: 7.5vw;
-  right: -1000px;
-  transform: translateY(-100px);
-  z-index: 1;
-}
-
-#toTopButton {
-  display: none;
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 10;
-  border: none;
-  outline: none;
-  background-color: #3792cb;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-}
-#toTopButton a {
-  color: #fff;
+footer ul li a {
   text-decoration: none;
+  background-color: #3792cb;
+  color: #fff;
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-size: 30px;
 }
-
-#toTopButton:hover {
-  background-color: #fff;
-}
-#toTopButton:hover a {
+footer ul li a:hover,
+footer ul li a:active {
+  background: #fff;
   color: #000000;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

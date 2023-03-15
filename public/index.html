@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     <script src="https://apis.google.com/js/client:platform.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../src/styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/7366fd843c.js"
       crossorigin="anonymous"
@@ -42,28 +42,28 @@
     <section>
       <!--@halestorm giphy.com-->
       <img
-        src="./src/assets/images/flying_birds.gif"
+        src="../src/assets/images/flying-birds.gif"
         id="birds"
         alt="Gif of flying birds"
       />
       <!--Image by rawpixel.com on Freepik-->
-      <img src="./src/assets/images/sun.png" id="sun" alt="Image of a sun" />
+      <img src="../src/assets/images/sun.png" id="sun" alt="Image of a sun" />
       <!--Image by Freepik-->
       <img
-        src="./src/assets/images/clouds.png"
+        src="../src/assets/images/clouds.png"
         id="clouds"
         alt="Image of clouds"
       />
       <!--Image by upklyak on Freepik-->
       <img
-        src="./src/assets/images/mountains_behind.png"
+        src="../src/assets/images/mountains-behind.png"
         id="mountainsBehind"
         alt="Background image of mountains"
       />
       <h2 id="text">Hello, World!</h2>
       <!--Image by upklyak on Freepik-->
       <img
-        src="./src/assets/images/trees_front.png"
+        src="../src/assets/images/trees-front.png"
         id="treesFront"
         alt="Foreground image of trees"
       />
@@ -80,25 +80,38 @@
           <div class="col-6 stackContainer">
             <object
               type="image/svg+xml"
-              data="./src/assets/images/stack_bottom.svg"
+              data="../src/assets/images/stack-bottom.svg"
               id="stackBottom"
             ></object>
 
             <object
               type="image/svg+xml"
-              data="./src/assets/images/stack_middle.svg"
+              data="../src/assets/images/stack-middle.svg"
               id="stackMiddle"
             ></object>
 
             <object
               type="image/svg+xml"
-              data="./src/assets/images/stack_top.svg"
+              data="../src/assets/images/stack-top.svg"
               id="stackTop"
             ></object>
           </div>
 
           <div class="col-6">
-            <p>Hover over each stack to see teh skillz</p>
+            <h3 id="skillsHeader">Hover over each stack to see teh skillz</h3>
+            <div id="frontEndSkills">
+              <p>front end</p>
+              <div class="skill">
+                <img src="../src/assets/images/icons8-javascript.gif" />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div id="middleTierSkills">
+              <p>middle tier</p>
+            </div>
+            <div id="backEndSkills">
+              <p>back end</p>
+            </div>
           </div>
         </div>
       </div>
@@ -110,6 +123,7 @@
 
     <div id="about">
       <h2>About</h2>
+      <a href="https://icons8.com">Icons by Icons8</a>
     </div>
 
     <div id="contact">
@@ -155,6 +169,11 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
       crossorigin
     ></script>
-    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/scripts/script.js"></script>
   </body>
 </html>
