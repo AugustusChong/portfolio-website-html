@@ -184,6 +184,25 @@ section::before {
 #skills div .stackContainer {
   height: 500px;
 }
+#skills div .skillsContainer {
+  display: inline-flex;
+  text-align: center;
+}
+#skills figure .skill {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+#skills figure img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+#skills figure figcaption {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
 
 #stackTop {
   position: absolute;

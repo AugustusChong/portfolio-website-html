@@ -198,6 +198,28 @@ section::before {
     .stackContainer {
       height: 500px;
     }
+    .skillsContainer{
+      display: inline-flex;
+      text-align: center;
+    }
+  }
+
+  figure{
+    .skill{
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+    }
+    img{
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+    }
+    figcaption{
+      display: block;
+      font-weight: bold;
+      color: #fff;
+    }
   }
 }
 
