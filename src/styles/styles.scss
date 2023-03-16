@@ -198,24 +198,26 @@ section::before {
     .stackContainer {
       height: 500px;
     }
-    .skillsContainer{
+    .skillsContainer {
       display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
       text-align: center;
     }
   }
 
-  figure{
-    .skill{
+  figure {
+    .skill {
       vertical-align: top;
       display: inline-block;
       text-align: center;
     }
-    img{
+    img {
       width: 100px;
       height: 100px;
-      margin: 20px;
+      margin: 12px;
     }
-    figcaption{
+    figcaption {
       display: block;
       font-weight: bold;
       color: #fff;
@@ -284,6 +286,8 @@ section::before {
   font-size: 1.5em;
   text-align: justify;
   text-justify: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #frontEndSkills {
