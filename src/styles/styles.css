@@ -201,6 +201,10 @@ section::before {
   height: 100px;
   margin: 12px;
 }
+#skills figure img.bootstrap {
+  width: auto;
+  height: 100px;
+}
 #skills figure div.icon {
   width: 100px;
   height: 100px;
