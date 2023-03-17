@@ -69,4 +69,22 @@ window.onload = function () {
     $("#skillsHeader").hide();
     $("#backEndSkills").show();
   }
+
+  var javascriptIcon = bodymovin.loadAnimation({
+    container: document.getElementById("javascriptIcon"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    name: "Animated Javascript Icon",
+    path: "../src/assets/images/icons8-javascript.json",
+  });
+
+  var reactIcon = bodymovin.loadAnimation({
+    container: document.getElementById("reactIcon"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    name: "Animated Javascript Icon",
+    path: "../src/assets/images/icons8-react.json",
+  });
 };

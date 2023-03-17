@@ -73,7 +73,7 @@ section {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-width: fit-content;
   height: 100vh;
 }
@@ -127,8 +127,8 @@ section::before {
   white-space: nowrap;
   color: #fff;
   font-size: 7.5vw;
-  right: -1000px;
-  transform: translateY(-100px);
+  right: -50%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
@@ -163,6 +163,7 @@ section::before {
   background: #ca822d;
   padding-top: 90px;
   padding-bottom: 90px;
+  width: 100%;
 }
 #skills h2 {
   text-align: center;
@@ -182,7 +183,7 @@ section::before {
   justify-content: center;
 }
 #skills div .stackContainer {
-  height: 500px;
+  height: 60vh;
 }
 #skills div .skillsContainer {
   display: inline-flex;
@@ -196,6 +197,11 @@ section::before {
   text-align: center;
 }
 #skills figure img {
+  width: 100px;
+  height: 100px;
+  margin: 12px;
+}
+#skills figure div.icon {
   width: 100px;
   height: 100px;
   margin: 12px;
