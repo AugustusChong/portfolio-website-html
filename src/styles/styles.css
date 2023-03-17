@@ -165,12 +165,20 @@ section::before {
   padding-bottom: 90px;
   width: 100%;
 }
-#skills h2 {
+#skills h1 {
   text-align: center;
   align-items: center;
   color: #fff;
   font-size: 3.5em;
   margin-bottom: 10px;
+}
+#skills h3 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  text-justify: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 #skills div .row {
   display: flex;
@@ -220,47 +228,41 @@ section::before {
   position: absolute;
   transform: translateY(-40%);
   z-index: 1;
-  scale: 0.5;
+  height: 30%;
+  width: auto;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
 }
 
 #stackTop:hover {
-  scale: 0.6;
+  scale: 1.2;
 }
 
 #stackMiddle {
   position: absolute;
   z-index: 1;
-  scale: 0.5;
+  height: 30%;
+  width: auto;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
 }
 
 #stackMiddle:hover {
-  scale: 0.6;
+  scale: 1.2;
 }
 
 #stackBottom {
   position: absolute;
   transform: translateY(40%);
   z-index: 1;
-  scale: 0.5;
+  height: 30%;
+  width: auto;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
 }
 
 #stackBottom:hover {
-  scale: 0.6;
-}
-
-#skillsHeader {
-  color: #fff;
-  font-size: 1.5em;
-  text-align: justify;
-  text-justify: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  scale: 1.2;
 }
 
 #frontEndSkills {
