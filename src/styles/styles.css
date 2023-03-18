@@ -228,8 +228,9 @@ section::before {
   position: absolute;
   transform: translateY(-40%);
   z-index: 1;
-  height: 30%;
+  height: 100%;
   width: auto;
+  max-height: 20vh;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
 }
@@ -241,8 +242,9 @@ section::before {
 #stackMiddle {
   position: absolute;
   z-index: 1;
-  height: 30%;
+  height: 100%;
   width: auto;
+  max-height: 20vh;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
 }
@@ -255,8 +257,9 @@ section::before {
   position: absolute;
   transform: translateY(40%);
   z-index: 1;
-  height: 30%;
+  height: 100%;
   width: auto;
+  max-height: 20vh;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
 }
