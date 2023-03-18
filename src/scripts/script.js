@@ -76,7 +76,7 @@ window.onload = function () {
     loop: true,
     autoplay: true,
     name: "Animated Javascript Icon",
-    path: "../src/assets/images/icons8-javascript.json",
+    path: "../src/assets/icons/icons8-javascript.json",
   });
 
   var reactIcon = bodymovin.loadAnimation({
@@ -85,6 +85,6 @@ window.onload = function () {
     loop: true,
     autoplay: true,
     name: "Animated Javascript Icon",
-    path: "../src/assets/images/icons8-react.json",
+    path: "../src/assets/icons/icons8-react.json",
   });
 };
