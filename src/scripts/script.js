@@ -71,24 +71,25 @@ window.onload = function () {
   }
 
   function showSkills(e) {
-    if (e.type === "mouseenter" && e.currentTarget.id === "stackTop") {
+    if (e.currentTarget.id === "stackTop") {
       e.stopPropagation();
       $("#skillsHeader").hide();
       $("#frontEndSkills").show();
-    } else if (
-      e.type === "mouseenter" &&
-      e.currentTarget.id === "stackMiddle"
-    ) {
+    } else if (e.currentTarget.id === "stackMiddle") {
       e.stopPropagation();
       $("#skillsHeader").hide();
       $("#middleTierSkills").show();
-    } else if (
-      e.type === "mouseenter" &&
-      e.currentTarget.id === "stackBottom"
-    ) {
+    } else if (e.currentTarget.id === "stackBottom") {
       e.stopPropagation();
       $("#skillsHeader").hide();
       $("#backEndSkills").show();
+    }
+  }
+
+  function pointerdownListener(e) {
+    let target = e.target;
+    if (target.tagName.toLowerCase() === "path") {
+      console.log(target.id);
     }
   }
 };

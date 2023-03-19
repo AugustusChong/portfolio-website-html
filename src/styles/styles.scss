@@ -254,6 +254,11 @@ section::before {
       color: #fff;
     }
   }
+
+  svg,
+  svg * {
+    pointer-events: all;
+  }
 }
 #skills::before {
   content: "";
