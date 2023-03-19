@@ -209,18 +209,18 @@ section::before {
   display: inline-block;
   text-align: center;
 }
-#skills figure .bootstrap {
-  width: auto;
+#skills figure .jsonIcon {
   height: 6vw;
+  width: 6vw;
+  margin: auto;
 }
 #skills figure .icon {
-  width: 6vw;
   height: 6vw;
+  width: 6vw;
 }
-#skills figure .jsonIcon {
-  width: 6vw;
+#skills figure .bootstrap {
   height: 6vw;
-  margin: auto;
+  width: auto;
 }
 #skills figure figcaption {
   display: block;
@@ -245,8 +245,8 @@ section::before {
   height: auto;
   width: 100%;
   max-width: 24vw;
-  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
-  -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
+  -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
 
 #stackTop:hover {
@@ -259,8 +259,8 @@ section::before {
   height: auto;
   width: 100%;
   max-width: 24vw;
-  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
-  -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
+  -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
 
 #stackMiddle:hover {
@@ -274,8 +274,8 @@ section::before {
   height: auto;
   width: 100%;
   max-width: 24vw;
-  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
-  -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
+  -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
 
 #stackBottom:hover {

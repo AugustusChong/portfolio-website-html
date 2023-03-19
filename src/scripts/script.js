@@ -38,38 +38,6 @@ function toTop() {
 }
 
 window.onload = function () {
-  $("#stackTop").on("mouseenter", showFrontEndSkills);
-  $("#stackTop").on("mouseout", showSkillsHeader);
-  $("#stackMiddle").on("mouseenter", showMiddleTierSkills);
-  $("#stackMiddle").on("mouseout", showSkillsHeader);
-  $("#stackBottom").on("mouseenter", showBackEndSkills);
-  $("#stackBottom").on("mouseout", showSkillsHeader);
-
-  function showSkillsHeader() {
-    $("#skillsHeader").show();
-    $("#frontEndSkills").hide();
-    $("#middleTierSkills").hide();
-    $("#backEndSkills").hide();
-  }
-
-  function showFrontEndSkills(e) {
-    e.stopPropagation();
-    $("#skillsHeader").hide();
-    $("#frontEndSkills").show();
-  }
-
-  function showMiddleTierSkills(e) {
-    e.stopPropagation();
-    $("#skillsHeader").hide();
-    $("#middleTierSkills").show();
-  }
-
-  function showBackEndSkills(e) {
-    e.stopPropagation();
-    $("#skillsHeader").hide();
-    $("#backEndSkills").show();
-  }
-
   var javascriptIcon = bodymovin.loadAnimation({
     container: document.getElementById("javascriptIcon"),
     renderer: "svg",
@@ -87,4 +55,40 @@ window.onload = function () {
     name: "Animated Javascript Icon",
     path: "../src/assets/icons/icons8-react.json",
   });
+
+  $("#stackTop").on("mouseenter", showSkills);
+  $("#stackTop").on("mouseout", showSkillsHeader);
+  $("#stackMiddle").on("mouseenter", showSkills);
+  $("#stackMiddle").on("mouseout", showSkillsHeader);
+  $("#stackBottom").on("mouseenter", showSkills);
+  $("#stackBottom").on("mouseout", showSkillsHeader);
+
+  function showSkillsHeader() {
+    $("#skillsHeader").show();
+    $("#frontEndSkills").hide();
+    $("#middleTierSkills").hide();
+    $("#backEndSkills").hide();
+  }
+
+  function showSkills(e) {
+    if (e.type === "mouseenter" && e.currentTarget.id === "stackTop") {
+      e.stopPropagation();
+      $("#skillsHeader").hide();
+      $("#frontEndSkills").show();
+    } else if (
+      e.type === "mouseenter" &&
+      e.currentTarget.id === "stackMiddle"
+    ) {
+      e.stopPropagation();
+      $("#skillsHeader").hide();
+      $("#middleTierSkills").show();
+    } else if (
+      e.type === "mouseenter" &&
+      e.currentTarget.id === "stackBottom"
+    ) {
+      e.stopPropagation();
+      $("#skillsHeader").hide();
+      $("#backEndSkills").show();
+    }
+  }
 };

@@ -232,20 +232,20 @@ section::before {
       text-align: center;
     }
 
-    .bootstrap {
-      width: auto;
+    .jsonIcon {
       height: $iconHeight;
+      width: $iconWidth;
+      margin: auto;
     }
 
     .icon {
-      width: $iconWidth;
       height: $iconHeight;
+      width: $iconWidth;
     }
 
-    .jsonIcon {
-      width: $iconWidth;
+    .bootstrap {
       height: $iconHeight;
-      margin: auto;
+      width: auto;
     }
 
     figcaption {
@@ -272,14 +272,14 @@ section::before {
   height: auto;
   width: 100%;
   max-width: 24vw;
-  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(
     50% 100%,
-    100% 60%,
-    100% 40%,
+    100% 57%,
+    100% 43%,
     50% 0,
-    0% 40%,
-    0% 60%
+    0% 43%,
+    0% 57%
   );
 }
 #stackTop:hover {
@@ -292,14 +292,14 @@ section::before {
   height: auto;
   width: 100%;
   max-width: 24vw;
-  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(
     50% 100%,
-    100% 60%,
-    100% 40%,
+    100% 57%,
+    100% 43%,
     50% 0,
-    0% 40%,
-    0% 60%
+    0% 43%,
+    0% 57%
   );
 }
 #stackMiddle:hover {
@@ -313,14 +313,14 @@ section::before {
   height: auto;
   width: 100%;
   max-width: 24vw;
-  clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
+  clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(
     50% 100%,
-    100% 60%,
-    100% 40%,
+    100% 57%,
+    100% 43%,
     50% 0,
-    0% 40%,
-    0% 60%
+    0% 43%,
+    0% 57%
   );
 }
 #stackBottom:hover {
