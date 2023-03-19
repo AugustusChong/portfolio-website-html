@@ -4,6 +4,8 @@
 $logo-font: Yellowtail, cursive;
 $font-stack: Poppins, sans-serif;
 $background-gradient: #fff2bd, #f4d797, #ebb58a, #da7f7d, #85728e, #776e99;
+$iconHeight: 6vw;
+$iconWidth: 6vw;
 
 @media only screen and (max-width: 600px) {
   header {
@@ -105,7 +107,7 @@ section::before {
   bottom: 0;
   height: 100px;
   width: 100%;
-  z-index: 9;
+  z-index: 4;
 }
 
 #birds {
@@ -173,7 +175,7 @@ section::before {
 #skills {
   position: relative;
   background: #ca822d;
-  padding-top: 90px;
+  padding-top: 84px;
   padding-bottom: 90px;
   width: 100%;
 
@@ -208,38 +210,42 @@ section::before {
     }
 
     .stackContainer {
-      height: 60vh;
+      height: 69vh;
     }
 
     .skillsContainer {
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
+      align-content: center;
+      align-items: center;
     }
   }
 
   figure {
+    margin: 1.5vw;
+
     .skill {
       vertical-align: top;
       display: inline-block;
       text-align: center;
     }
 
-    img {
-      width: 100px;
-      height: 100px;
-      margin: 12px;
-    }
-    img.bootstrap {
+    .bootstrap {
       width: auto;
-      height: 100px;
+      height: $iconHeight;
     }
 
-    div.icon {
-      width: 100px;
-      height: 100px;
-      margin: 12px;
+    .icon {
+      width: $iconWidth;
+      height: $iconHeight;
+    }
+
+    .jsonIcon {
+      width: $iconWidth;
+      height: $iconHeight;
+      margin: auto;
     }
 
     figcaption {
@@ -249,14 +255,23 @@ section::before {
     }
   }
 }
+#skills::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, #da7f7d, transparent);
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 0;
+}
 
 #stackTop {
   position: absolute;
-  transform: translateY(-40%);
+  transform: translateY(-36%);
   z-index: 1;
-  height: 100%;
-  width: auto;
-  max-height: 20vh;
+  height: auto;
+  width: 100%;
+  max-width: 24vw;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(
     50% 100%,
@@ -274,9 +289,9 @@ section::before {
 #stackMiddle {
   position: absolute;
   z-index: 1;
-  height: 100%;
-  width: auto;
-  max-height: 20vh;
+  height: auto;
+  width: 100%;
+  max-width: 24vw;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(
     50% 100%,
@@ -293,11 +308,11 @@ section::before {
 
 #stackBottom {
   position: absolute;
-  transform: translateY(40%);
+  transform: translateY(36%);
   z-index: 1;
-  height: 100%;
-  width: auto;
-  max-height: 20vh;
+  height: auto;
+  width: 100%;
+  max-width: 24vw;
   clip-path: polygon(50% 100%, 100% 60%, 100% 40%, 50% 0, 0% 40%, 0% 60%);
   -webkit-clip-path: polygon(
     50% 100%,
@@ -324,6 +339,14 @@ section::before {
   display: none;
 }
 
+#projects {
+  position: relative;
+  background: #da7f7d;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 100%;
+}
+
 footer {
   position: fixed;
   text-align: center;
@@ -331,7 +354,7 @@ footer {
   bottom: 0;
   width: 200px;
   color: #fff;
-  z-index: 0;
+  z-index: 1;
   transform: translate(-50%, 0);
 
   ul {
