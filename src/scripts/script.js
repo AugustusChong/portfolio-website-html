@@ -73,7 +73,7 @@ window.onload = function () {
     .on("mouseenter", showSkills)
     .on("mouseout", showSkillsHeader)
     .on("click", onSkillsClick);
-  $("#skills").on("click", onSkillsClick);
+  $(window).on("click", onSkillsClick);
 
   function showSkillsHeader(e) {
     if (clickFlag === true && e.currentTarget.id === "stackBottom") {

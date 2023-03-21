@@ -3,7 +3,7 @@
 
 $logo-font: Yellowtail, cursive;
 $font-stack: Poppins, sans-serif;
-$background-gradient: #fff2bd, #f4d797, #ebb58a, #da7f7d, #85728e, #776e99;
+$background-gradient: #fff2bd, #f4d797, #ebb58a, #da7f7d, #b5728e, #776e99;
 $iconHeight: 6vw;
 $iconWidth: 6vw;
 
@@ -133,8 +133,8 @@ section::before {
   position: absolute;
   white-space: nowrap;
   color: #fff;
-  font-size: 7.5vw;
-  right: -50%;
+  font-size: 8vw;
+  right: -60%;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -170,20 +170,20 @@ section::before {
   position: relative;
   background: #ca822d;
   padding-top: 84px;
-  padding-bottom: 96px;
+  padding-bottom: 84px;
   width: 100%;
 
   h1 {
     text-align: center;
     align-items: center;
     color: #fff;
-    font-size: 3.5em;
+    font-size: 3.6rem;
     margin-bottom: 10px;
   }
 
   h3 {
     color: #fff;
-    font-size: 2em;
+    font-size: 3vh;
     text-align: center;
     text-justify: auto;
     padding-left: 24px;
@@ -244,7 +244,7 @@ section::before {
 
     figcaption {
       display: block;
-      font-weight: bold;
+      font-weight: 600;
       color: #fff;
     }
   }
@@ -252,7 +252,7 @@ section::before {
 #skills::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, #da7f7d, transparent);
+  background: linear-gradient(to top, #834945, transparent);
   bottom: 0;
   height: 84px;
   width: 100%;
@@ -335,15 +335,23 @@ section::before {
 
 #projects {
   position: relative;
-  background: #da7f7d;
+  background: #834945;
   padding-top: 90px;
   padding-bottom: 90px;
   width: 100%;
+
+  h1 {
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3.6rem;
+    margin-bottom: 10px;
+  }
 }
 #projects::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, #85728e, transparent);
+  background: linear-gradient(to top, #5a3e49, transparent);
   bottom: 0;
   height: 84px;
   width: 100%;
@@ -352,15 +360,23 @@ section::before {
 
 #about {
   position: relative;
-  background: #85728e;
+  background: #5a3e49;
   padding-top: 90px;
   padding-bottom: 90px;
   width: 100%;
+
+  h1 {
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3.6rem;
+    margin-bottom: 10px;
+  }
 }
 #about::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, #776e99, transparent);
+  background: linear-gradient(to top, #32334d, transparent);
   bottom: 0;
   height: 84px;
   width: 100%;
@@ -369,10 +385,18 @@ section::before {
 
 #contact {
   position: relative;
-  background: #776e99;
+  background: #32334d;
   padding-top: 90px;
   padding-bottom: 90px;
   width: 100%;
+
+  h1 {
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3.6rem;
+    margin-bottom: 10px;
+  }
 }
 
 footer {
