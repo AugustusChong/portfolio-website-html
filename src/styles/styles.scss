@@ -7,12 +7,6 @@ $background-gradient: #fff2bd, #f4d797, #ebb58a, #da7f7d, #85728e, #776e99;
 $iconHeight: 6vw;
 $iconWidth: 6vw;
 
-@media only screen and (max-width: 600px) {
-  header {
-    display: none;
-  }
-}
-
 * {
   font-family: $font-stack;
   box-sizing: border-box;
@@ -418,5 +412,11 @@ footer {
         color: #000000;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    display: none;
   }
 }
