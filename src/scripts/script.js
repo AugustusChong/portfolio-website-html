@@ -126,6 +126,5 @@ window.onload = function () {
       $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
     }
-    console.log(clickFlag);
   }
 };
