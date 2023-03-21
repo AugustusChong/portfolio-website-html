@@ -62,7 +62,7 @@ header ul li a:active {
   color: #000000;
 }
 
-section {
+section.landingPage {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ section {
   min-width: fit-content;
   height: 100vh;
 }
-section img {
+section.landingPage img {
   pointer-events: none;
   position: absolute;
   object-fit: cover;
@@ -81,43 +81,27 @@ section img {
   width: 100vw;
   height: 100vh;
 }
-
-section::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to top, #ca822d, transparent);
-  bottom: 0;
-  height: 84px;
-  width: 100%;
-  z-index: 4;
-}
-
-#birds {
+section.landingPage #birds {
   height: 25%;
   width: auto;
   transform: translate(45vw, 25vh);
   z-index: 2;
 }
-
-#clouds {
+section.landingPage #clouds {
   overflow: hidden;
   white-space: nowrap;
   z-index: 1;
 }
-
-#mountainsBehind {
+section.landingPage #mountainsBehind {
   z-index: 1;
 }
-
-#sun {
+section.landingPage #sun {
   mix-blend-mode: color-burn;
 }
-
-#treesFront {
+section.landingPage #treesFront {
   z-index: 3;
 }
-
-#text {
+section.landingPage #text {
   position: absolute;
   white-space: nowrap;
   color: #fff;
@@ -125,6 +109,16 @@ section::before {
   right: -60%;
   transform: translateY(-50%);
   z-index: 1;
+}
+
+section.landingPage::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, #ca822d, transparent);
+  bottom: 0;
+  height: 84px;
+  width: 100%;
+  z-index: 4;
 }
 
 #toTopButton {
@@ -222,18 +216,7 @@ section::before {
   font-weight: 600;
   color: #fff;
 }
-
-#skills::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to top, #834945, transparent);
-  bottom: 0;
-  height: 84px;
-  width: 100%;
-  z-index: 0;
-}
-
-#stackTop {
+#skills #stackTop {
   position: absolute;
   transform: translateY(-36%);
   z-index: 1;
@@ -243,12 +226,10 @@ section::before {
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
-
-#stackTop:hover {
+#skills #stackTop:hover {
   scale: 1.2;
 }
-
-#stackMiddle {
+#skills #stackMiddle {
   position: absolute;
   z-index: 1;
   height: auto;
@@ -257,12 +238,10 @@ section::before {
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
-
-#stackMiddle:hover {
+#skills #stackMiddle:hover {
   scale: 1.2;
 }
-
-#stackBottom {
+#skills #stackBottom {
   position: absolute;
   transform: translateY(36%);
   z-index: 1;
@@ -272,21 +251,27 @@ section::before {
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
-
-#stackBottom:hover {
+#skills #stackBottom:hover {
   scale: 1.2;
 }
-
-#frontEndSkills {
+#skills #frontEndSkills {
+  display: none;
+}
+#skills #middleTierSkills {
+  display: none;
+}
+#skills #backEndSkills {
   display: none;
 }
 
-#middleTierSkills {
-  display: none;
-}
-
-#backEndSkills {
-  display: none;
+#skills::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, #834945, transparent);
+  bottom: 0;
+  height: 84px;
+  width: 100%;
+  z-index: 0;
 }
 
 #projects {
