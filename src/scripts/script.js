@@ -56,40 +56,76 @@ window.onload = function () {
     path: "../src/assets/icons/icons8-react.json",
   });
 
-  $("#stackTop").on("mouseenter", showSkills);
-  $("#stackTop").on("mouseout", showSkillsHeader);
-  $("#stackMiddle").on("mouseenter", showSkills);
-  $("#stackMiddle").on("mouseout", showSkillsHeader);
-  $("#stackBottom").on("mouseenter", showSkills);
-  $("#stackBottom").on("mouseout", showSkillsHeader);
+  let clickFlag = false;
 
-  function showSkillsHeader() {
-    $("#skillsHeader").show();
-    $("#frontEndSkills").hide();
-    $("#middleTierSkills").hide();
-    $("#backEndSkills").hide();
+  $("#stackTop")
+    .on("mouseenter", showSkills)
+    .on("mouseout", showSkillsHeader)
+    .on("click", onSkillsClick);
+  $("#stackMiddle")
+    .on("mouseenter", showSkills)
+    .on("mouseout", showSkillsHeader)
+    .on("click", onSkillsClick);
+  $("#stackBottom")
+    .on("mouseenter", showSkills)
+    .on("mouseout", showSkillsHeader)
+    .on("click", onSkillsClick);
+  $("#skills").on("click", onSkillsClick);
+
+  function showSkillsHeader(e) {
+    if (clickFlag === true && e.currentTarget.id === "stackBottom") {
+      $("#skillsHeader").hide();
+      $("#frontEndSkills").hide();
+      $("#middleTierSkills").hide();
+    } else if (clickFlag === true && e.currentTarget.id === "stackMiddle") {
+      $("#skillsHeader").hide();
+      $("#frontEndSkills").hide();
+      $("#backEndSkills").hide();
+    } else if (clickFlag === true && e.currentTarget.id === "stackTop") {
+      $("#skillsHeader").hide();
+      $("#middleTierSkills").hide();
+      $("#backEndSkills").hide();
+    } else {
+      $("#skillsHeader").show();
+      $("#frontEndSkills").hide();
+      $("#middleTierSkills").hide();
+      $("#backEndSkills").hide();
+    }
   }
 
   function showSkills(e) {
     if (e.currentTarget.id === "stackTop") {
-      e.stopPropagation();
       $("#skillsHeader").hide();
       $("#frontEndSkills").show();
+      $("#middleTierSkills").hide();
+      $("#backEndSkills").hide();
     } else if (e.currentTarget.id === "stackMiddle") {
-      e.stopPropagation();
       $("#skillsHeader").hide();
+      $("#frontEndSkills").hide();
       $("#middleTierSkills").show();
+      $("#backEndSkills").hide();
     } else if (e.currentTarget.id === "stackBottom") {
-      e.stopPropagation();
       $("#skillsHeader").hide();
+      $("#frontEndSkills").hide();
+      $("#middleTierSkills").hide();
       $("#backEndSkills").show();
     }
   }
 
-  function pointerdownListener(e) {
-    let target = e.target;
-    if (target.tagName.toLowerCase() === "path") {
-      console.log(target.id);
+  function onSkillsClick(e) {
+    if (
+      e.target.id === "stackBottom" ||
+      e.target.id === "stackMiddle" ||
+      e.target.id === "stackTop"
+    ) {
+      clickFlag = true;
+    } else {
+      clickFlag = false;
+      $("#skillsHeader").show();
+      $("#frontEndSkills").hide();
+      $("#middleTierSkills").hide();
+      $("#backEndSkills").hide();
     }
+    console.log(clickFlag);
   }
 };
