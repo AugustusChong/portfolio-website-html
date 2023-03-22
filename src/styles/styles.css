@@ -286,7 +286,7 @@ section.landingPage::before {
   align-items: center;
   color: #fff;
   font-size: 3.6rem;
-  margin-bottom: 36px;
+  margin-bottom: 90px;
 }
 #projects h2 {
   color: #fff;
@@ -295,6 +295,7 @@ section.landingPage::before {
 #projects div .project {
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 10vh;
 }
 #projects div .projectDetails {
   text-align: center;
@@ -305,6 +306,11 @@ section.landingPage::before {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+#projects #analyticsDemoVideo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #projects::before {
