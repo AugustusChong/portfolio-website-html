@@ -286,7 +286,25 @@ section.landingPage::before {
   align-items: center;
   color: #fff;
   font-size: 3.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 36px;
+}
+#projects h2 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+#projects div .project {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#projects div .projectDetails {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#projects div .projectExample {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects::before {

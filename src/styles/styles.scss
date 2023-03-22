@@ -345,7 +345,31 @@ section.landingPage::before {
     align-items: center;
     color: #fff;
     font-size: 3.6rem;
-    margin-bottom: 10px;
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  div {
+    .project {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .projectDetails {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projectExample {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 #projects::before {
