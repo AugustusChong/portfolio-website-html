@@ -25,13 +25,15 @@
 
   <body>
     <header>
-      <a href="#" class="logo">Augustus Chong</a>
-      <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav>
+        <a href="#" class="logo">Augustus Chong</a>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="landingPage">
@@ -205,10 +207,22 @@
       <h1>Projects</h1>
       <div class="container-fluid">
         <div class="row project">
-          <div class="col-sm-12 col-lg-4 projectDetails">
+          <div class="col-sm-12 col-lg-3 projectDetails">
             <h2>Analytics Dashboard</h2>
+            <div class="projectDescription">
+              <div class="paragraphBackground">
+                <p>
+                  An analytics dashboard for a cybersecurity training startup,
+                  which allows a system administrator to see data for various
+                  categories. The dashboard makes API calls and uses stored
+                  procedures to get data from the database. It was made using
+                  React, .NET, and MS SQL.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-12 col-lg-8 projectExample">
+          <div class="col-lg-2" style="visibility: hidden"></div>
+          <div class="col-sm-12 col-lg-3 projectExample">
             <iframe
               id="analyticsDemoVideo"
               width="560"
@@ -247,6 +261,73 @@
 
     <section id="contact">
       <h1>Contact</h1>
+      <div class="fcf-body">
+        <div id="fcf-form">
+          <form
+            id="fcf-form-id"
+            class="fcf-form-class"
+            method="post"
+            action="contact-form-process.php"
+          >
+            <div class="fcf-form-group">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                  class="fcf-form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                <input
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  class="fcf-form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                <textarea
+                  id="Message"
+                  name="Message"
+                  class="fcf-form-control"
+                  rows="6"
+                  maxlength="3000"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <button
+                type="submit"
+                id="fcf-button"
+                class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div class="fcf-credit" id="fcf-credit">
+              Simple HTML email form provided by
+              <a href="https://www.majesticform.com" target="_blank"
+                >MajesticForm</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer>

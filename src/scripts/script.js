@@ -6,6 +6,7 @@ const sun = document.getElementById("sun");
 const topButton = document.getElementById("toTopButton");
 const treesFront = document.getElementById("treesFront");
 const text = document.getElementById("text");
+const projectDescription = document.querySelector(".projectDescription");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
@@ -23,6 +24,21 @@ window.addEventListener("scroll", function () {
 window.onscroll = function () {
   scrollFunction();
 };
+
+projectDescription.addEventListener("mousemove", (e) => {
+  const paragraphBackground = projectDescription.querySelector(
+    ".paragraphBackground"
+  );
+  const childWidth = paragraphBackground.offsetWidth;
+  const childHeight = paragraphBackground.offsetHeight;
+  const centerX = childWidth / 2;
+  const centerY = childHeight / 2;
+  const mouseX = e.offsetX;
+  const mouseY = e.offsetY;
+  const moveX = (centerX - mouseX) / 20;
+  const moveY = (centerY - mouseY) / 20;
+  paragraphBackground.style.transform = `rotateX(${moveY}deg) rotateY(${moveX}deg)`;
+});
 
 function scrollFunction() {
   if (
