@@ -4,6 +4,7 @@ const clouds = document.getElementById("clouds");
 const mountainsBehind = document.getElementById("mountainsBehind");
 const sun = document.getElementById("sun");
 const topButton = document.getElementById("toTopButton");
+const footer = document.querySelector("footer");
 const treesFront = document.getElementById("treesFront");
 const text = document.getElementById("text");
 const projects = document.querySelectorAll(".project");
@@ -50,8 +51,10 @@ function scrollFunction() {
     (window.innerWidth > 400 && document.documentElement.scrollTop > 20)
   ) {
     topButton.style.display = "block";
+    footer.style.display = "block";
   } else {
     topButton.style.display = "none";
+    footer.style.display = "none";
   }
 }
 

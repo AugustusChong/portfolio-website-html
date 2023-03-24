@@ -492,7 +492,7 @@ section.landingPage::before {
       width: 100%;
 
       textarea {
-        height: 100px;
+        height: 180px;
       }
     }
 
@@ -550,7 +550,7 @@ footer {
   bottom: 0;
   width: 200px;
   color: #fff;
-  z-index: 1;
+  z-index: 0;
   transform: translate(-50%, 0);
 
   ul {
