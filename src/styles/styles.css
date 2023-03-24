@@ -163,7 +163,7 @@ section.landingPage::before {
 }
 #skills h3 {
   color: #fff;
-  font-size: 3vh;
+  font-size: 2vw;
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
@@ -179,7 +179,7 @@ section.landingPage::before {
   justify-content: center;
 }
 #skills div .stackContainer {
-  height: 69vh;
+  height: 60vh;
 }
 #skills div .skillsContainer {
   display: flex;
@@ -198,16 +198,16 @@ section.landingPage::before {
   text-align: center;
 }
 #skills figure .jsonIcon {
-  height: 6vw;
-  width: 6vw;
+  height: 5vw;
+  width: 5vw;
   margin: auto;
 }
 #skills figure .icon {
-  height: 6vw;
-  width: 6vw;
+  height: 5vw;
+  width: 5vw;
 }
 #skills figure .bootstrap {
-  height: 6vw;
+  height: 5vw;
   width: auto;
 }
 #skills figure figcaption {
@@ -364,6 +364,63 @@ section.landingPage::before {
   color: #fff;
   font-size: 3.6rem;
   margin-bottom: 60px;
+}
+#about .aboutMe {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+#about .aboutMe .imageContainer {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  perspective: 1000;
+}
+#about .aboutMe .imageContainer .profileImage,
+#about .aboutMe .imageContainer .front,
+#about .aboutMe .imageContainer .back {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#about .aboutMe .imageContainer .profileImage {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+#about .aboutMe .imageContainer .front,
+#about .aboutMe .imageContainer .back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+#about .aboutMe .imageContainer .front {
+  z-index: 1;
+  transform: rotateY(0deg);
+  background: url("../assets/photos/1667327087181.jpg") no-repeat;
+  background-size: cover;
+}
+#about .aboutMe .imageContainer .back {
+  z-index: 2;
+  transform: rotateY(180deg);
+  background: url("../assets/photos/IMG_20150209_074526.jpg") no-repeat;
+  background-size: cover;
+}
+#about .aboutMe .imageContainer:hover .profileImage {
+  transform: rotateY(180deg);
+}
+#about .aboutMe .name {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+#about .aboutMe .description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 #about::before {

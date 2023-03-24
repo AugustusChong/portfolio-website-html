@@ -4,8 +4,8 @@
 $logo-font: Yellowtail, cursive;
 $font-stack: Poppins, sans-serif;
 $background-gradient: #fff2bd, #f4d797, #ebb58a, #da7f7d, #b5728e, #776e99;
-$iconHeight: 6vw;
-$iconWidth: 6vw;
+$iconHeight: 5vw;
+$iconWidth: 5vw;
 
 @function get-vw($target) {
   $vw-context: (1000 * 0.01) * 1px;
@@ -190,7 +190,7 @@ section.landingPage::before {
 
   h3 {
     color: #fff;
-    font-size: 3vh;
+    font-size: 2vw;
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
@@ -210,7 +210,7 @@ section.landingPage::before {
     }
 
     .stackContainer {
-      height: 69vh;
+      height: 60vh;
     }
 
     .skillsContainer {
@@ -441,6 +441,76 @@ section.landingPage::before {
     color: #fff;
     font-size: 3.6rem;
     margin-bottom: 60px;
+  }
+
+  .aboutMe {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+    .imageContainer {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      perspective: 1000;
+
+      .profileImage,
+      .front,
+      .back {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .profileImage {
+        transition: 0.5s;
+        transform-style: preserve-3d;
+        position: relative;
+      }
+
+      .front,
+      .back {
+        backface-visibility: hidden;
+        position: absolute;
+      }
+
+      .front {
+        z-index: 1;
+        transform: rotateY(0deg);
+        background: url("../assets/photos/1667327087181.jpg") no-repeat;
+        background-size: cover;
+      }
+
+      .back {
+        z-index: 2;
+        transform: rotateY(180deg);
+        background: url("../assets/photos/IMG_20150209_074526.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+    .imageContainer:hover .profileImage {
+      transform: rotateY(180deg);
+    }
+
+    // .backImage {
+    //   transform: rotateY(180deg);
+    // }
+
+    .name {
+      margin-top: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
   }
 }
 #about::before {
