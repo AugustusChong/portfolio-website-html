@@ -6,6 +6,7 @@ const sun = document.getElementById("sun");
 const topButton = document.getElementById("toTopButton");
 const treesFront = document.getElementById("treesFront");
 const text = document.getElementById("text");
+const projects = document.querySelectorAll(".project");
 const projectDescription = document.querySelector(".projectDescription");
 
 window.addEventListener("scroll", function () {
@@ -24,6 +25,9 @@ window.addEventListener("scroll", function () {
 window.onscroll = function () {
   scrollFunction();
 };
+
+animateProjects();
+window.addEventListener("scroll", animateProjects);
 
 projectDescription.addEventListener("mousemove", (e) => {
   const paragraphBackground = projectDescription.querySelector(
@@ -54,6 +58,17 @@ function scrollFunction() {
 function toTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function animateProjects() {
+  projects.forEach((project) => {
+    const projectTop = project.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (projectTop < windowHeight - 30) {
+      project.classList.add("animate");
+    }
+  });
 }
 
 window.onload = function () {
