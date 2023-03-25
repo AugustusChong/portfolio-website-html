@@ -163,7 +163,7 @@ section.landingPage::before {
 }
 #skills h3 {
   color: #fff;
-  font-size: 2vw;
+  font-size: 2rem;
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
@@ -179,7 +179,15 @@ section.landingPage::before {
   justify-content: center;
 }
 #skills div .stackContainer {
-  height: 60vh;
+  position: relative;
+  height: 582px;
+}
+#skills div .stackContainer img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-width: 18vw;
+  object-fit: contain;
 }
 #skills div .skillsContainer {
   display: flex;
@@ -197,11 +205,6 @@ section.landingPage::before {
   display: inline-block;
   text-align: center;
 }
-#skills figure .jsonIcon {
-  height: 5vw;
-  width: 5vw;
-  margin: auto;
-}
 #skills figure .icon {
   height: 5vw;
   width: 5vw;
@@ -215,13 +218,14 @@ section.landingPage::before {
   font-weight: 600;
   color: #fff;
 }
+#skills .jsonIcon {
+  height: 5vw;
+  width: 5vw;
+  margin: auto;
+}
 #skills #stackTop {
-  position: absolute;
   transform: translateY(-36%);
   z-index: 1;
-  height: auto;
-  width: 100%;
-  max-width: 24vw;
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
@@ -229,11 +233,7 @@ section.landingPage::before {
   scale: 1.2;
 }
 #skills #stackMiddle {
-  position: absolute;
   z-index: 1;
-  height: auto;
-  width: 100%;
-  max-width: 24vw;
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
@@ -241,17 +241,16 @@ section.landingPage::before {
   scale: 1.2;
 }
 #skills #stackBottom {
-  position: absolute;
   transform: translateY(36%);
   z-index: 1;
-  height: auto;
-  width: 100%;
-  max-width: 24vw;
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
   -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
 }
 #skills #stackBottom:hover {
   scale: 1.2;
+}
+#skills #skillsHeader {
+  font-size: 1.2vw;
 }
 #skills #frontEndSkills {
   display: none;
@@ -260,6 +259,15 @@ section.landingPage::before {
   display: none;
 }
 #skills #backEndSkills {
+  display: none;
+}
+#skills #toolsIcon {
+  z-index: 2;
+  width: 3vw;
+  height: auto;
+  transform: translateY(-360%);
+}
+#skills #tools {
   display: none;
 }
 
@@ -318,6 +326,11 @@ section.landingPage::before {
   perspective: 1000px;
   padding-left: 12px;
   padding-right: 12px;
+}
+#projects div .projectDescription .projectLinks {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
 }
 #projects div .paragraphBackground {
   background-color: #5c3936;
@@ -547,6 +560,14 @@ footer ul li a:hover,
 footer ul li a:active {
   background: #fff;
   color: #000000;
+}
+
+.sitePreview {
+  display: none;
+  position: absolute;
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
 }
 
 @media only screen and (max-width: 768px) {

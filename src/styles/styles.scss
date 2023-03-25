@@ -190,7 +190,7 @@ section.landingPage::before {
 
   h3 {
     color: #fff;
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
@@ -210,7 +210,16 @@ section.landingPage::before {
     }
 
     .stackContainer {
-      height: 60vh;
+      position: relative;
+      height: 582px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        max-width: 18vw;
+        object-fit: contain;
+      }
     }
 
     .skillsContainer {
@@ -232,12 +241,6 @@ section.landingPage::before {
       text-align: center;
     }
 
-    .jsonIcon {
-      height: $iconHeight;
-      width: $iconWidth;
-      margin: auto;
-    }
-
     .icon {
       height: $iconHeight;
       width: $iconWidth;
@@ -255,13 +258,15 @@ section.landingPage::before {
     }
   }
 
+  .jsonIcon {
+    height: $iconHeight;
+    width: $iconWidth;
+    margin: auto;
+  }
+
   #stackTop {
-    position: absolute;
     transform: translateY(-36%);
     z-index: 1;
-    height: auto;
-    width: 100%;
-    max-width: 24vw;
     clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
     -webkit-clip-path: polygon(
       50% 100%,
@@ -277,11 +282,7 @@ section.landingPage::before {
   }
 
   #stackMiddle {
-    position: absolute;
     z-index: 1;
-    height: auto;
-    width: 100%;
-    max-width: 24vw;
     clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
     -webkit-clip-path: polygon(
       50% 100%,
@@ -297,12 +298,8 @@ section.landingPage::before {
   }
 
   #stackBottom {
-    position: absolute;
     transform: translateY(36%);
     z-index: 1;
-    height: auto;
-    width: 100%;
-    max-width: 24vw;
     clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
     -webkit-clip-path: polygon(
       50% 100%,
@@ -317,6 +314,10 @@ section.landingPage::before {
     scale: 1.2;
   }
 
+  #skillsHeader {
+    font-size: 1.2vw;
+  }
+
   #frontEndSkills {
     display: none;
   }
@@ -326,6 +327,17 @@ section.landingPage::before {
   }
 
   #backEndSkills {
+    display: none;
+  }
+
+  #toolsIcon {
+    z-index: 2;
+    width: 3vw;
+    height: auto;
+    transform: translateY(-360%);
+  }
+
+  #tools {
     display: none;
   }
 }
@@ -390,6 +402,12 @@ section.landingPage::before {
       perspective: 1000px;
       padding-left: 12px;
       padding-right: 12px;
+
+      .projectLinks {
+        width: 60px;
+        height: auto;
+        margin: 0 auto;
+      }
     }
 
     .paragraphBackground {
@@ -492,10 +510,6 @@ section.landingPage::before {
     .imageContainer:hover .profileImage {
       transform: rotateY(180deg);
     }
-
-    // .backImage {
-    //   transform: rotateY(180deg);
-    // }
 
     .name {
       margin-top: 20px;
@@ -651,6 +665,14 @@ footer {
       }
     }
   }
+}
+
+.sitePreview {
+  display: none;
+  position: absolute;
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
 }
 
 @media only screen and (max-width: 768px) {

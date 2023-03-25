@@ -93,6 +93,15 @@ window.onload = function () {
     path: "../src/assets/icons/icons8-react.json",
   });
 
+  var gitHubIcon = bodymovin.loadAnimation({
+    container: document.getElementById("gitHubIcon"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    name: "Animated Javascript Icon",
+    path: "../src/assets/icons/9867-github-logo-octocat-animated.json",
+  });
+
   let clickFlag = false;
 
   $("#stackTop")
@@ -107,6 +116,10 @@ window.onload = function () {
     .on("mouseenter", showSkills)
     .on("mouseout", showSkillsHeader)
     .on("click", onSkillsClick);
+  $("#toolsIcon")
+    .on("mouseenter", showSkills)
+    .on("mouseout", showSkillsHeader)
+    .on("click", onSkillsClick);
   $(window).on("click", onSkillsClick);
 
   function showSkillsHeader(e) {
@@ -114,12 +127,20 @@ window.onload = function () {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
       $("#middleTierSkills").hide();
+      $("#tools").hide();
     } else if (clickFlag === true && e.currentTarget.id === "stackMiddle") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
       $("#backEndSkills").hide();
+      $("#tools").hide();
     } else if (clickFlag === true && e.currentTarget.id === "stackTop") {
       $("#skillsHeader").hide();
+      $("#middleTierSkills").hide();
+      $("#backEndSkills").hide();
+      $("#tools").hide();
+    } else if (clickFlag === true && e.currentTarget.id === "toolsIcon") {
+      $("#skillsHeader").hide();
+      $("#frontEndSkills").hide();
       $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
     } else {
@@ -127,6 +148,7 @@ window.onload = function () {
       $("#frontEndSkills").hide();
       $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
+      $("#tools").hide();
     }
   }
 
@@ -136,16 +158,25 @@ window.onload = function () {
       $("#frontEndSkills").show();
       $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
+      $("#tools").hide();
     } else if (e.currentTarget.id === "stackMiddle") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
       $("#middleTierSkills").show();
       $("#backEndSkills").hide();
+      $("#tools").hide();
     } else if (e.currentTarget.id === "stackBottom") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
       $("#middleTierSkills").hide();
       $("#backEndSkills").show();
+      $("#tools").hide();
+    } else if (e.currentTarget.id === "toolsIcon") {
+      $("#skillsHeader").hide();
+      $("#frontEndSkills").hide();
+      $("#middleTierSkills").hide();
+      $("#backEndSkills").hide();
+      $("#tools").show();
     }
   }
 
@@ -153,7 +184,8 @@ window.onload = function () {
     if (
       e.target.id === "stackBottom" ||
       e.target.id === "stackMiddle" ||
-      e.target.id === "stackTop"
+      e.target.id === "stackTop" ||
+      e.target.id === "toolsIcon"
     ) {
       clickFlag = true;
     } else {
@@ -162,6 +194,15 @@ window.onload = function () {
       $("#frontEndSkills").hide();
       $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
+      $("#tools").hide();
     }
   }
+
+  $(".siteLink")
+    .mouseover(function () {
+      $(this).children(".sitePreview").show();
+    })
+    .mouseout(function () {
+      $(this).children(".sitePreview").hide();
+    });
 };
