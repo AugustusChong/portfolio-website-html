@@ -31,7 +31,7 @@ try {
     $mail -> Body = $message;
 
     $mail -> send();
-    header('Location: ./sent.html');
+    // header('Location: ./sent.html');
 } catch (Exception $e) {
     echo "Email could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
