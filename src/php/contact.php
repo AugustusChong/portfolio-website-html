@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../../vendor/autoload.php';
 
-$developmentMode = true;
+$developmentMode = false;
 $mail = new PHPMailer(true);
 
 $name = $_POST['name'];
@@ -13,7 +13,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 try {
-    $mail -> SMTPDebug = SMTP::DEBUG_SERVER;
+    // $mail -> SMTPDebug = SMTP::DEBUG_SERVER;
     $mail -> isSMTP();
     $mail -> Host = 'smtp.gmail.com';
     $mail -> SMTPAuth = true;
