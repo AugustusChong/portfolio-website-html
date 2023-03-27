@@ -1,12 +1,12 @@
 const header = document.querySelector("header");
-const birds = document.getElementById("birds");
-const clouds = document.getElementById("clouds");
-const mountainsBehind = document.getElementById("mountainsBehind");
 const sun = document.getElementById("sun");
-const topButton = document.getElementById("toTopButton");
-const footer = document.querySelector("footer");
+const clouds = document.getElementById("clouds");
+const birds = document.getElementById("birds");
+const mountainsBehind = document.getElementById("mountainsBehind");
 const treesFront = document.getElementById("treesFront");
 const text = document.getElementById("text");
+const topButton = document.getElementById("toTopButton");
+const footer = document.querySelector("footer");
 const projects = document.querySelectorAll(".project");
 const projectDescription = document.querySelector(".projectDescription");
 
