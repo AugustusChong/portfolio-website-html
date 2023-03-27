@@ -624,29 +624,6 @@ section.landingPage::before {
       background-color: #005fa3;
     }
   }
-
-  #grayPanel {
-    background: #000;
-    opacity: 0.5;
-    width: 100%;
-    height: 99999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 50;
-  }
-
-  #popup {
-    height: 200px;
-    width: 400px;
-    border: solid 2px black;
-    background: yellow;
-    display: none;
-    z-index: 51;
-    position: fixed;
-    top: 70;
-  }
 }
 
 footer {
