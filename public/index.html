@@ -356,8 +356,8 @@
 
     <section id="contact">
       <h1>Contact</h1>
-      <div class="contactForm">
-        <form action="../src/php/form-submit.php" method="post">
+      <div class="contactFormContainer">
+        <form action="../src/php/send-email.php" method="POST" id="contactForm">
           <div class="formGroup">
             <label for="name">Name:</label>
             <input
@@ -431,19 +431,21 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       src="https://unpkg.com/react@18/umd/react.production.min.js"
       crossorigin
     ></script>
     <script
       src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
       crossorigin
-    ></script>
+    ></script> -->
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="../src/scripts/validate.js"></script>
     <script src="../src/scripts/script.js"></script>
   </body>
 </html>

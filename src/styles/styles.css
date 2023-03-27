@@ -460,7 +460,7 @@ section.landingPage::before {
   font-size: 3.6rem;
   margin-bottom: 60px;
 }
-#contact .contactForm {
+#contact .contactFormContainer {
   display: flex;
   justify-content: center;
   align-items: center;
