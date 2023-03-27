@@ -206,3 +206,9 @@ window.onload = function () {
       $(this).children(".sitePreview").hide();
     });
 };
+
+$(document).ready(function () {
+  $("#contactForm").ajaxForm(function () {
+    alert("Thank you for your message! Message was sent successfully.");
+  });
+});

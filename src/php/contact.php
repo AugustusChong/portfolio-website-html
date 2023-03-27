@@ -3,8 +3,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require '../../vendor/autoload.php';
 
+$developmentMode = true;
 $mail = new PHPMailer(true);
 
 $name = $_POST['name'];
