@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require '../../vendor/autoload.php';
+include ("../../config/config.php");
 
 $developmentMode = false;
 $mail = new PHPMailer(true);
@@ -17,13 +18,13 @@ try {
     $mail -> isSMTP();
     $mail -> Host = 'smtp.gmail.com';
     $mail -> SMTPAuth = true;
-    $mail -> Username = 'ad.honorem.confido@gmail.com';
-    $mail -> Password = 'pwthgsfkoellmyai';
+    $mail -> Username = $Username;
+    $mail -> Password = $Password;
     $mail -> SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail -> Port = 587;
+    $mail -> Port = 465;
 
     $mail -> setFrom($email, $name);
-    $mail -> addAddress('augustus.chong.dev@gmail.com');
+    $mail -> addAddress($PersonalEmail);
     $mail -> addReplyTo($email, $name);
 
     $mail -> isHTML(true);

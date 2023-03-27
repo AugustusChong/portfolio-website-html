@@ -121,6 +121,19 @@ window.onload = function () {
     .on("mouseout", showSkillsHeader)
     .on("click", onSkillsClick);
   $(window).on("click", onSkillsClick);
+  $(".siteLink")
+    .mouseover(function () {
+      $(this).children(".sitePreview").show();
+    })
+    .mouseout(function () {
+      $(this).children(".sitePreview").hide();
+    });
+
+  $(document).ready(function () {
+    $("#contactForm").ajaxForm(function () {
+      alert("Thank you for your message! Message was sent successfully.");
+    });
+  });
 
   function showSkillsHeader(e) {
     if (clickFlag === true && e.currentTarget.id === "stackBottom") {
@@ -197,18 +210,4 @@ window.onload = function () {
       $("#tools").hide();
     }
   }
-
-  $(".siteLink")
-    .mouseover(function () {
-      $(this).children(".sitePreview").show();
-    })
-    .mouseout(function () {
-      $(this).children(".sitePreview").hide();
-    });
-
-  $(document).ready(function () {
-    $("#contactForm").ajaxForm(function () {
-      alert("Thank you for your message! Message was sent successfully.");
-    });
-  });
 };
