@@ -75,7 +75,7 @@ function animateProjects() {
 }
 
 window.onload = function () {
-  var javascriptIcon = bodymovin.loadAnimation({
+  const javascriptIcon = bodymovin.loadAnimation({
     container: document.getElementById("javascriptIcon"),
     renderer: "svg",
     loop: true,
@@ -84,22 +84,40 @@ window.onload = function () {
     path: "../src/assets/icons/icons8-javascript.json",
   });
 
-  var reactIcon = bodymovin.loadAnimation({
+  const reactIcon = bodymovin.loadAnimation({
     container: document.getElementById("reactIcon"),
     renderer: "svg",
     loop: true,
     autoplay: true,
-    name: "Animated Javascript Icon",
+    name: "Animated React Icon",
     path: "../src/assets/icons/icons8-react.json",
   });
 
-  var gitHubIcon = bodymovin.loadAnimation({
+  const gitHubIcon = bodymovin.loadAnimation({
     container: document.getElementById("gitHubIcon"),
     renderer: "svg",
     loop: true,
     autoplay: true,
-    name: "Animated Javascript Icon",
+    name: "Animated GitHub Icon",
     path: "../src/assets/icons/9867-github-logo-octocat-animated.json",
+  });
+
+  const pythonIcon = bodymovin.loadAnimation({
+    container: document.getElementById("pythonIcon"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    name: "Animated Python Icon",
+    path: "../src/assets/icons/icons8-python.json",
+  });
+
+  const nodeJsIcon = bodymovin.loadAnimation({
+    container: document.getElementById("nodeJsIcon"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    name: "Animated Node.js Icon",
+    path: "../src/assets/icons/72902-nodejs.json",
   });
 
   let clickFlag = false;

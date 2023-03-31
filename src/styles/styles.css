@@ -163,7 +163,7 @@ section.landingPage::before {
 }
 #skills h3 {
   color: #fff;
-  font-size: 2rem;
+  font-size: calc(10px + 3vmin);
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
@@ -180,13 +180,13 @@ section.landingPage::before {
 }
 #skills div .stackContainer {
   position: relative;
-  height: 582px;
+  height: calc(66px + 60vmin);
 }
 #skills div .stackContainer img {
   position: absolute;
   width: 100%;
   height: auto;
-  max-width: 18vw;
+  max-width: calc(240px + 12vmin);
   object-fit: contain;
 }
 #skills div .skillsContainer {
@@ -250,7 +250,7 @@ section.landingPage::before {
   scale: 1.2;
 }
 #skills #skillsHeader {
-  font-size: 1.2vw;
+  font-size: calc(10px + 2vmin);
 }
 #skills #frontEndSkills {
   display: none;
@@ -263,9 +263,9 @@ section.landingPage::before {
 }
 #skills #toolsIcon {
   z-index: 2;
-  width: 3vw;
+  width: calc(10px + 6vmin);
   height: auto;
-  transform: translateY(-360%);
+  transform: translateY(-318%);
 }
 #skills #tools {
   display: none;
@@ -431,8 +431,7 @@ section.landingPage::before {
 #about .aboutMe .description {
   font-size: 18px;
   line-height: 1.5;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 30px;
   color: #fff;
 }
 
