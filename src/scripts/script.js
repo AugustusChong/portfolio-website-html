@@ -134,10 +134,6 @@ window.onload = function () {
     .on("mouseenter", showSkills)
     .on("mouseout", showSkillsHeader)
     .on("click", onSkillsClick);
-  $("#toolsIcon")
-    .on("mouseenter", showSkills)
-    .on("mouseout", showSkillsHeader)
-    .on("click", onSkillsClick);
   $(window).on("click", onSkillsClick);
   $(".siteLink")
     .mouseover(function () {
@@ -155,27 +151,18 @@ window.onload = function () {
     if (clickFlag === true && e.currentTarget.id === "stackBottom") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
-      $("#middleTierSkills").hide();
-      $("#tools").hide();
+      $("#backEndSkills").hide();
     } else if (clickFlag === true && e.currentTarget.id === "stackMiddle") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
-      $("#backEndSkills").hide();
       $("#tools").hide();
     } else if (clickFlag === true && e.currentTarget.id === "stackTop") {
       $("#skillsHeader").hide();
-      $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
       $("#tools").hide();
-    } else if (clickFlag === true && e.currentTarget.id === "toolsIcon") {
-      $("#skillsHeader").hide();
-      $("#frontEndSkills").hide();
-      $("#middleTierSkills").hide();
-      $("#backEndSkills").hide();
     } else {
       $("#skillsHeader").show();
       $("#frontEndSkills").hide();
-      $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
       $("#tools").hide();
     }
@@ -185,25 +172,16 @@ window.onload = function () {
     if (e.currentTarget.id === "stackTop") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").show();
-      $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
       $("#tools").hide();
     } else if (e.currentTarget.id === "stackMiddle") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
-      $("#middleTierSkills").show();
-      $("#backEndSkills").hide();
+      $("#backEndSkills").show();
       $("#tools").hide();
     } else if (e.currentTarget.id === "stackBottom") {
       $("#skillsHeader").hide();
       $("#frontEndSkills").hide();
-      $("#middleTierSkills").hide();
-      $("#backEndSkills").show();
-      $("#tools").hide();
-    } else if (e.currentTarget.id === "toolsIcon") {
-      $("#skillsHeader").hide();
-      $("#frontEndSkills").hide();
-      $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
       $("#tools").show();
     }
@@ -213,15 +191,13 @@ window.onload = function () {
     if (
       e.target.id === "stackBottom" ||
       e.target.id === "stackMiddle" ||
-      e.target.id === "stackTop" ||
-      e.target.id === "toolsIcon"
+      e.target.id === "stackTop"
     ) {
       clickFlag = true;
     } else {
       clickFlag = false;
       $("#skillsHeader").show();
       $("#frontEndSkills").hide();
-      $("#middleTierSkills").hide();
       $("#backEndSkills").hide();
       $("#tools").hide();
     }

@@ -217,7 +217,7 @@ section.landingPage::before {
         position: absolute;
         width: 100%;
         height: auto;
-        max-width: calc(240px + 12vmin);
+        max-width: calc(240px + 12vmax);
         object-fit: contain;
       }
     }
@@ -322,19 +322,8 @@ section.landingPage::before {
     display: none;
   }
 
-  #middleTierSkills {
-    display: none;
-  }
-
   #backEndSkills {
     display: none;
-  }
-
-  #toolsIcon {
-    z-index: 2;
-    width: calc(10px + 6vmin);
-    height: auto;
-    transform: translateY(-318%);
   }
 
   #tools {
