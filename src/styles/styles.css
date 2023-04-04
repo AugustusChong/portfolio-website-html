@@ -14,6 +14,10 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -50,7 +54,6 @@ header nav ul li {
   margin-left: 12px;
 }
 header nav ul li a {
-  text-decoration: none;
   background-color: #3792cb;
   color: #fff;
   border-radius: 24px;
@@ -137,7 +140,6 @@ section.landingPage::before {
 }
 #toTopButton a {
   color: #fff;
-  text-decoration: none;
 }
 
 #toTopButton:hover {
@@ -180,7 +182,7 @@ section.landingPage::before {
 }
 #skills div .stackContainer {
   position: relative;
-  height: calc(66px + 60vmin);
+  height: calc(60px + 72vmin);
 }
 #skills div .stackContainer img {
   position: absolute;
@@ -539,7 +541,6 @@ footer ul li {
   list-style: none;
 }
 footer ul li a {
-  text-decoration: none;
   background-color: #3792cb;
   color: #fff;
   border-radius: 30px;
