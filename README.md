@@ -1,3 +1,3 @@
 # portfolio-website-html
  
-## Portfolio website made using HTML, CSS, and JavaScript
+## Portfolio website coded with HTML, CSS, and JavaScript
