@@ -3,8 +3,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require '../../vendor/autoload.php';
-include ("../../config/config.php");
+require '/vendor/autoload.php';
+include ("/config/config.php");
 
 $developmentMode = true;
 $mail = new PHPMailer(true);
@@ -16,14 +16,14 @@ $message = $_POST['message'];
 try {
     $mail -> SMTPDebug = SMTP::DEBUG_SERVER;
     $mail -> isSMTP();
-    $mail -> Host = 'augustuschong.com';
+    $mail -> Host = '';
     $mail -> SMTPAuth = true;
     $mail -> Username = $Username;
     $mail -> Password = $Password;
     $mail -> SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail -> Port = 587;
 
-    $mail -> setFrom('contact@augustuschong.com', $name);
+    $mail -> setFrom('', $name);
     $mail -> addAddress($PersonalEmail);
     $mail -> addReplyTo($email, $name);
 
