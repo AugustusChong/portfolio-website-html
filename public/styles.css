@@ -9,7 +9,14 @@
 }
 
 body {
-  background: linear-gradient(#fff2bd, #f4d797, #ebb58a, #da7f7d, #b5728e, #776e99);
+  background: linear-gradient(
+    #fff2bd,
+    #f4d797,
+    #ebb58a,
+    #da7f7d,
+    #b5728e,
+    #776e99
+  );
   overflow-x: hidden;
   width: 100%;
 }
@@ -229,7 +236,14 @@ section.landingPage::before {
   transform: translateY(-36%);
   z-index: 1;
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
-  -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
+  -webkit-clip-path: polygon(
+    50% 100%,
+    100% 57%,
+    100% 43%,
+    50% 0,
+    0% 43%,
+    0% 57%
+  );
 }
 #skills #stackTop:hover {
   scale: 1.2;
@@ -237,7 +251,14 @@ section.landingPage::before {
 #skills #stackMiddle {
   z-index: 1;
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
-  -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
+  -webkit-clip-path: polygon(
+    50% 100%,
+    100% 57%,
+    100% 43%,
+    50% 0,
+    0% 43%,
+    0% 57%
+  );
 }
 #skills #stackMiddle:hover {
   scale: 1.2;
@@ -246,7 +267,14 @@ section.landingPage::before {
   transform: translateY(36%);
   z-index: 1;
   clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
-  -webkit-clip-path: polygon(50% 100%, 100% 57%, 100% 43%, 50% 0, 0% 43%, 0% 57%);
+  -webkit-clip-path: polygon(
+    50% 100%,
+    100% 57%,
+    100% 43%,
+    50% 0,
+    0% 43%,
+    0% 57%
+  );
 }
 #skills #stackBottom:hover {
   scale: 1.2;
@@ -403,13 +431,13 @@ section.landingPage::before {
 #about .aboutMe .imageContainer .front {
   z-index: 1;
   transform: rotateY(0deg);
-  background: url("../assets/photos/1667327087181.jpg") no-repeat;
+  background: url("./assets/photos/1667327087181.jpg") no-repeat;
   background-size: cover;
 }
 #about .aboutMe .imageContainer .back {
   z-index: 2;
   transform: rotateY(180deg);
-  background: url("../assets/photos/IMG_20150209_074526.jpg") no-repeat;
+  background: url("./assets/photos/IMG_20150209_074526.jpg") no-repeat;
   background-size: cover;
 }
 #about .aboutMe .imageContainer:hover .profileImage {
@@ -503,7 +531,7 @@ section.landingPage::before {
   background-color: #f5f5f5;
   font-size: 16px;
 }
-#contact form button[type=submit] {
+#contact form button[type="submit"] {
   display: block;
   margin: 0 auto;
   background-color: #0077cc;
@@ -515,7 +543,7 @@ section.landingPage::before {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
-#contact form button[type=submit]:hover {
+#contact form button[type="submit"]:hover {
   background-color: #005fa3;
 }
 

@@ -1,5 +1,6 @@
 {
   "name": "portfolio-website-html",
+  "homepage": "https://augustuschong.github.io/portfolio-website-html/",
   "source": "public/index.html",
   "scripts": {
     "dev": "parcel public/index.html",
@@ -9,5 +10,10 @@
     "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-webmanifest": "^2.8.3",
     "parcel": "latest"
+  },
+  "targets": {
+    "default": {
+      "publicUrl": "./"
+    }
   }
 }
