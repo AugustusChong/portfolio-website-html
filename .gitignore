@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .parcel-cache
+node_modules/*
+public
+vendor
